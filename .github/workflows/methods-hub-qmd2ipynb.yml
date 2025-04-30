@@ -1,0 +1,15 @@
+name: Convert Quarto to Jupyter Notebook
+on:
+  push:
+    branches:
+      - v*
+
+jobs:
+  test-methods-hub-render:
+    name: Convert Quarto to Jupyter Notebook
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GESIS-Methods-Hub/qmd2ipynb@v2
+        with:
+          files: 'index.qmd'
+          token: ${{ secrets.GITHUB_TOKEN }}
