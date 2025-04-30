@@ -3,6 +3,11 @@ title: Quantifying implicit associations among words using word embeddings
 author: Chung-hong Chan (GESIS)
 bibliography: references.bib
 csl: apa.csl
+jupyter:
+  kernelspec:
+    name: "ir"
+    language: "R"
+    display_name: "R 4.3.3"
 ---
 
 ```{r}
