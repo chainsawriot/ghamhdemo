@@ -8,6 +8,8 @@ jobs:
   test-methods-hub-render:
     name: Convert Quarto to Jupyter Notebook
     runs-on: ubuntu-latest
+    permissions:
+       contents: write
     steps:
       - uses: GESIS-Methods-Hub/qmd2ipynb@v2
         with:
